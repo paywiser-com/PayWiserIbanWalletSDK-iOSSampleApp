@@ -1,0 +1,300 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17506" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="Iw2-8E-nIR">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17505"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--PayWiser IBAN Wallet SDK-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="PhoneVerificationViewController" customModule="PayWiserIbanWalletSDK_TestApp" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Phone number" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Fb6-yR-SaX">
+                                <rect key="frame" x="40" y="170" width="334" height="40"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="40" id="skH-5B-SGb"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" keyboardType="alphabet"/>
+                            </textField>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qbI-TW-K5f" customClass="Button" customModule="PayWiserIbanWalletSDK_TestApp" customModuleProvider="target">
+                                <rect key="frame" x="40" y="264" width="334" height="40"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="40" id="F22-zd-CKA"/>
+                                </constraints>
+                                <state key="normal" title="Check phone number"/>
+                                <connections>
+                                    <action selector="onCheckPhoneNumber:" destination="BYZ-38-t0r" eventType="touchUpInside" id="XPM-nv-68a"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Enter international phone number" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="nxy-uu-XRa">
+                                <rect key="frame" x="20" y="128" width="374" height="18"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Error text" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wdI-NZ-SbK">
+                                <rect key="frame" x="40" y="218" width="334" height="16"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="Fb6-yR-SaX" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="40" id="1zU-QK-zrp"/>
+                            <constraint firstItem="nxy-uu-XRa" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="4f9-h9-2bm"/>
+                            <constraint firstItem="Fb6-yR-SaX" firstAttribute="top" secondItem="nxy-uu-XRa" secondAttribute="bottom" constant="24" id="E8D-pd-u8u"/>
+                            <constraint firstItem="qbI-TW-K5f" firstAttribute="top" secondItem="wdI-NZ-SbK" secondAttribute="bottom" constant="30" id="JGX-z8-9e8"/>
+                            <constraint firstItem="nxy-uu-XRa" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="40" id="L0B-DN-Nvk"/>
+                            <constraint firstItem="wdI-NZ-SbK" firstAttribute="top" secondItem="Fb6-yR-SaX" secondAttribute="bottom" constant="8" id="P2A-TU-CBo"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="nxy-uu-XRa" secondAttribute="trailing" constant="20" id="S6Q-p9-jNh"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="Fb6-yR-SaX" secondAttribute="trailing" constant="40" id="UZt-bz-hLq"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="qbI-TW-K5f" secondAttribute="trailing" constant="40" id="Y3Y-tU-tw9"/>
+                            <constraint firstItem="wdI-NZ-SbK" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="40" id="bee-DP-Tw0"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="wdI-NZ-SbK" secondAttribute="trailing" constant="40" id="oYv-Kp-f73"/>
+                            <constraint firstItem="qbI-TW-K5f" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="40" id="sGn-AJ-aX4"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" title="PayWiser IBAN Wallet SDK" id="FfX-dh-dl2">
+                        <barButtonItem key="backBarButtonItem" title=" " id="PFG-Ll-hf0"/>
+                    </navigationItem>
+                    <connections>
+                        <outlet property="ErrorText" destination="wdI-NZ-SbK" id="krO-GN-Qru"/>
+                        <outlet property="PhoneNumber" destination="Fb6-yR-SaX" id="fUP-Qf-v6V"/>
+                        <outlet property="PhoneNumberButton" destination="qbI-TW-K5f" id="gdf-v6-cG1"/>
+                        <segue destination="qXG-Vj-KeH" kind="show" identifier="confirmationCode" id="PwX-bY-4zf"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1025" y="494"/>
+        </scene>
+        <!--PayWiser IBAN Wallet SDK-->
+        <scene sceneID="KzM-OW-cfE">
+            <objects>
+                <viewController id="qXG-Vj-KeH" customClass="ConfirmVerificationViewController" customModule="PayWiserIbanWalletSDK_TestApp" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="whc-Sv-ECu">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Instructions text" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="aqw-z0-ecf">
+                                <rect key="frame" x="20" y="128" width="374" height="18"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Phone number" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="eUa-ao-QBW">
+                                <rect key="frame" x="20" y="162" width="374" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Confirmation code" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="ySh-e1-LzI">
+                                <rect key="frame" x="40" y="207" width="334" height="40"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="40" id="C3j-vS-tYb"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" keyboardType="numberPad"/>
+                                <connections>
+                                    <action selector="textFieldChanged:" destination="qXG-Vj-KeH" eventType="editingChanged" id="4DE-UZ-ruS"/>
+                                </connections>
+                            </textField>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Error text" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="yiG-1T-QtD">
+                                <rect key="frame" x="40" y="255" width="334" height="16"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="NqG-BE-JfW" customClass="Button" customModule="PayWiserIbanWalletSDK_TestApp" customModuleProvider="target">
+                                <rect key="frame" x="40" y="301" width="334" height="40"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="40" id="Tk1-On-Q6S"/>
+                                </constraints>
+                                <state key="normal" title="Confirm code"/>
+                                <connections>
+                                    <action selector="onConfirmCode:" destination="qXG-Vj-KeH" eventType="touchUpInside" id="Jrv-iA-fsi"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ocE-Cz-xsS" customClass="ButtonInverted" customModule="PayWiserIbanWalletSDK_TestApp" customModuleProvider="target">
+                                <rect key="frame" x="40" y="381" width="90" height="30"/>
+                                <state key="normal" title="Resend code"/>
+                                <connections>
+                                    <action selector="onResendCode:" destination="qXG-Vj-KeH" eventType="touchUpInside" id="CLV-nj-N9h"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Counter" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="HBK-bP-nnU">
+                                <rect key="frame" x="134" y="373" width="49" height="16"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                                <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="pyg-SB-ldD"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="ocE-Cz-xsS" firstAttribute="top" secondItem="NqG-BE-JfW" secondAttribute="bottom" constant="40" id="7BK-Hg-uds"/>
+                            <constraint firstItem="NqG-BE-JfW" firstAttribute="top" secondItem="yiG-1T-QtD" secondAttribute="bottom" constant="30" id="Bvm-No-rUk"/>
+                            <constraint firstItem="ocE-Cz-xsS" firstAttribute="leading" secondItem="pyg-SB-ldD" secondAttribute="leading" constant="40" id="ENs-Q7-UyZ"/>
+                            <constraint firstItem="aqw-z0-ecf" firstAttribute="leading" secondItem="pyg-SB-ldD" secondAttribute="leading" constant="20" id="Gc8-p3-TpM"/>
+                            <constraint firstItem="aqw-z0-ecf" firstAttribute="top" secondItem="pyg-SB-ldD" secondAttribute="top" constant="40" id="HiC-Na-ybv"/>
+                            <constraint firstItem="yiG-1T-QtD" firstAttribute="top" secondItem="ySh-e1-LzI" secondAttribute="bottom" constant="8" id="KpE-OE-LYq"/>
+                            <constraint firstItem="pyg-SB-ldD" firstAttribute="trailing" secondItem="NqG-BE-JfW" secondAttribute="trailing" constant="40" id="ala-0q-eVi"/>
+                            <constraint firstItem="yiG-1T-QtD" firstAttribute="leading" secondItem="pyg-SB-ldD" secondAttribute="leading" constant="40" id="b43-2L-ZND"/>
+                            <constraint firstItem="eUa-ao-QBW" firstAttribute="top" secondItem="aqw-z0-ecf" secondAttribute="bottom" constant="16" id="cTD-oI-j2i"/>
+                            <constraint firstItem="NqG-BE-JfW" firstAttribute="leading" secondItem="pyg-SB-ldD" secondAttribute="leading" constant="40" id="cnp-7K-0nE"/>
+                            <constraint firstItem="ySh-e1-LzI" firstAttribute="top" secondItem="eUa-ao-QBW" secondAttribute="bottom" constant="24" id="iCP-10-WAD"/>
+                            <constraint firstItem="pyg-SB-ldD" firstAttribute="trailing" secondItem="eUa-ao-QBW" secondAttribute="trailing" constant="20" id="leK-LJ-z22"/>
+                            <constraint firstItem="pyg-SB-ldD" firstAttribute="trailing" secondItem="yiG-1T-QtD" secondAttribute="trailing" constant="40" id="mnN-dP-HlQ"/>
+                            <constraint firstItem="HBK-bP-nnU" firstAttribute="centerY" secondItem="ocE-Cz-xsS" secondAttribute="top" id="p2Y-Xc-j9a"/>
+                            <constraint firstItem="eUa-ao-QBW" firstAttribute="leading" secondItem="pyg-SB-ldD" secondAttribute="leading" constant="20" id="tYO-QS-FWC"/>
+                            <constraint firstItem="ySh-e1-LzI" firstAttribute="leading" secondItem="pyg-SB-ldD" secondAttribute="leading" constant="40" id="tfy-eK-Jpa"/>
+                            <constraint firstItem="pyg-SB-ldD" firstAttribute="trailing" secondItem="aqw-z0-ecf" secondAttribute="trailing" constant="20" id="xnU-pl-0rH"/>
+                            <constraint firstItem="HBK-bP-nnU" firstAttribute="leading" secondItem="ocE-Cz-xsS" secondAttribute="trailing" constant="4" id="yFX-UW-0Uq"/>
+                            <constraint firstItem="pyg-SB-ldD" firstAttribute="trailing" secondItem="ySh-e1-LzI" secondAttribute="trailing" constant="40" id="ygT-je-nJr"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" title="PayWiser IBAN Wallet SDK" id="2yh-BN-u84">
+                        <barButtonItem key="backBarButtonItem" title=" " id="LWW-XV-2Mq"/>
+                    </navigationItem>
+                    <connections>
+                        <outlet property="ConfirmButton" destination="NqG-BE-JfW" id="DBd-kR-CET"/>
+                        <outlet property="ConfirmationCode" destination="ySh-e1-LzI" id="PeC-O7-nNT"/>
+                        <outlet property="Counter" destination="HBK-bP-nnU" id="syL-H3-1C6"/>
+                        <outlet property="ErrorText" destination="yiG-1T-QtD" id="xmJ-pn-bXC"/>
+                        <outlet property="InstructionsText" destination="aqw-z0-ecf" id="D7K-cX-L8g"/>
+                        <outlet property="PhoneNumber" destination="eUa-ao-QBW" id="Dxj-6J-Cm6"/>
+                        <outlet property="ResendButton" destination="ocE-Cz-xsS" id="YPa-x1-g0i"/>
+                        <segue destination="Cl3-yS-J4f" kind="show" identifier="walletData" id="ckm-53-3Jh"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="5bI-hW-e5x" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1805.7971014492755" y="493.52678571428567"/>
+        </scene>
+        <!--PayWiser IBAN Wallet SDK-->
+        <scene sceneID="PSj-5V-xi1">
+            <objects>
+                <viewController id="V0D-PU-Mdv" customClass="ViewController" customModule="PayWiserIbanWalletSDK_TestApp" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="VTL-vB-v5D">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="tOh-eD-YGn" customClass="Button" customModule="PayWiserIbanWalletSDK_TestApp" customModuleProvider="target">
+                                <rect key="frame" x="40" y="428" width="334" height="40"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="40" id="qf9-pf-Ezb"/>
+                                </constraints>
+                                <state key="normal" title="Login"/>
+                                <connections>
+                                    <action selector="onLogin:" destination="V0D-PU-Mdv" eventType="touchUpInside" id="yKe-WL-zmQ"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="XtS-Yl-N0X"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="tOh-eD-YGn" firstAttribute="centerY" secondItem="VTL-vB-v5D" secondAttribute="centerY" id="FNP-gY-d4N"/>
+                            <constraint firstItem="XtS-Yl-N0X" firstAttribute="trailing" secondItem="tOh-eD-YGn" secondAttribute="trailing" constant="40" id="eZE-W2-X9b"/>
+                            <constraint firstItem="tOh-eD-YGn" firstAttribute="leading" secondItem="XtS-Yl-N0X" secondAttribute="leading" constant="40" id="jPM-8X-tQc"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" title="PayWiser IBAN Wallet SDK" id="bX2-68-n1F">
+                        <barButtonItem key="backBarButtonItem" title=" " id="t4s-9H-82A"/>
+                    </navigationItem>
+                    <connections>
+                        <segue destination="Cl3-yS-J4f" kind="show" identifier="walletData" id="a5d-9a-O0a"/>
+                        <segue destination="BYZ-38-t0r" kind="show" identifier="loginScreen" id="Fg2-sI-oTC"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="7r4-Va-rai" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="181" y="494"/>
+        </scene>
+        <!--PayWiser IBAN Wallet SDK-->
+        <scene sceneID="Isw-XX-spv">
+            <objects>
+                <viewController id="Cl3-yS-J4f" customClass="WalletDataViewController" customModule="PayWiserIbanWalletSDK_TestApp" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="evF-4O-RWP">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Wallet data" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="v2I-VG-RF9">
+                                <rect key="frame" x="40" y="108" width="334" height="21"/>
+                                <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="PRi-4g-V2f">
+                                <rect key="frame" x="20" y="149" width="374" height="713"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <collectionViewFlowLayout key="collectionViewLayout" automaticEstimatedItemSize="YES" minimumLineSpacing="10" minimumInteritemSpacing="10" id="Xw4-G1-m6z">
+                                    <size key="itemSize" width="128" height="128"/>
+                                    <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                                    <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                                    <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                </collectionViewFlowLayout>
+                                <cells/>
+                            </collectionView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="hFn-oY-IFP"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="hFn-oY-IFP" firstAttribute="bottom" secondItem="PRi-4g-V2f" secondAttribute="bottom" id="5Ef-wY-aZx"/>
+                            <constraint firstItem="v2I-VG-RF9" firstAttribute="leading" secondItem="hFn-oY-IFP" secondAttribute="leading" constant="40" id="Fg0-Zq-1Rw"/>
+                            <constraint firstItem="hFn-oY-IFP" firstAttribute="trailing" secondItem="v2I-VG-RF9" secondAttribute="trailing" constant="40" id="IYf-KN-iae"/>
+                            <constraint firstItem="hFn-oY-IFP" firstAttribute="trailing" secondItem="PRi-4g-V2f" secondAttribute="trailing" constant="20" id="KkP-hP-yew"/>
+                            <constraint firstItem="v2I-VG-RF9" firstAttribute="top" secondItem="hFn-oY-IFP" secondAttribute="top" constant="20" id="TdC-MP-chd"/>
+                            <constraint firstItem="PRi-4g-V2f" firstAttribute="leading" secondItem="hFn-oY-IFP" secondAttribute="leading" constant="20" id="vsD-M8-6Tb"/>
+                            <constraint firstItem="PRi-4g-V2f" firstAttribute="top" secondItem="v2I-VG-RF9" secondAttribute="bottom" constant="20" id="wgx-EL-fBN"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" title="PayWiser IBAN Wallet SDK" id="FP7-hc-n6S">
+                        <barButtonItem key="backBarButtonItem" title=" " id="W7i-lr-WaJ"/>
+                    </navigationItem>
+                    <connections>
+                        <outlet property="ibansCollectionView" destination="PRi-4g-V2f" id="eq3-G3-SzZ"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="0p4-06-Fqe" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="565" y="1278"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="Ih5-j3-SqH">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="Iw2-8E-nIR" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="Aqi-f1-8id">
+                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="V0D-PU-Mdv" kind="relationship" relationship="rootViewController" id="LBX-1Q-QR6"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="kPq-PP-bq1" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-728" y="494"/>
+        </scene>
+    </scenes>
+    <inferredMetricsTieBreakers>
+        <segue reference="ckm-53-3Jh"/>
+    </inferredMetricsTieBreakers>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
