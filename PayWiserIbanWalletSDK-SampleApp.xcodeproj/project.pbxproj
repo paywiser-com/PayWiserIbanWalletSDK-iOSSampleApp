@@ -7,7 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		0520E83310AA30EAD5E52F18 /* Pods_PayWiserIbanWalletSDK_SampleApp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4A145A98483E011B693AC7CB /* Pods_PayWiserIbanWalletSDK_SampleApp.framework */; };
 		3B35977F25E824D500D984D1 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B35977E25E824D500D984D1 /* AppDelegate.swift */; };
 		3B4C6BE325E2959200C58A33 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B4C6BE225E2959200C58A33 /* SceneDelegate.swift */; };
 		3B4C6BE525E2959200C58A33 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B4C6BE425E2959200C58A33 /* ViewController.swift */; };
@@ -21,6 +20,7 @@
 		3B66E33525E7CEC2009D487D /* ConfirmVerificationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B66E32F25E7CEC1009D487D /* ConfirmVerificationViewController.swift */; };
 		3B66E33625E7CEC2009D487D /* IbanCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3B66E33025E7CEC2009D487D /* IbanCollectionViewCell.xib */; };
 		3B66E33725E7CEC2009D487D /* PhoneVerificationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B66E33125E7CEC2009D487D /* PhoneVerificationViewController.swift */; };
+		DD928AF4F4C8425D651E9DA3 /* Pods_PayWiserIbanWalletSDK_SampleApp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 23220A95BA6BD57EE35B6FDB /* Pods_PayWiserIbanWalletSDK_SampleApp.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -37,6 +37,8 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		0C53C3950A262E2A95AF309F /* Pods-PayWiserIbanWalletSDK-SampleApp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PayWiserIbanWalletSDK-SampleApp.release.xcconfig"; path = "Target Support Files/Pods-PayWiserIbanWalletSDK-SampleApp/Pods-PayWiserIbanWalletSDK-SampleApp.release.xcconfig"; sourceTree = "<group>"; };
+		23220A95BA6BD57EE35B6FDB /* Pods_PayWiserIbanWalletSDK_SampleApp.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_PayWiserIbanWalletSDK_SampleApp.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		3B35977E25E824D500D984D1 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		3B4C6BDD25E2959200C58A33 /* PayWiserIbanWalletSDK-SampleApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "PayWiserIbanWalletSDK-SampleApp.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		3B4C6BE225E2959200C58A33 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -52,9 +54,7 @@
 		3B66E32F25E7CEC1009D487D /* ConfirmVerificationViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ConfirmVerificationViewController.swift; sourceTree = "<group>"; };
 		3B66E33025E7CEC2009D487D /* IbanCollectionViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = IbanCollectionViewCell.xib; sourceTree = "<group>"; };
 		3B66E33125E7CEC2009D487D /* PhoneVerificationViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PhoneVerificationViewController.swift; sourceTree = "<group>"; };
-		49E2F299801ABAAF61A96717 /* Pods-PayWiserIbanWalletSDK-SampleApp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PayWiserIbanWalletSDK-SampleApp.release.xcconfig"; path = "Target Support Files/Pods-PayWiserIbanWalletSDK-SampleApp/Pods-PayWiserIbanWalletSDK-SampleApp.release.xcconfig"; sourceTree = "<group>"; };
-		4A145A98483E011B693AC7CB /* Pods_PayWiserIbanWalletSDK_SampleApp.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_PayWiserIbanWalletSDK_SampleApp.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		6956C67FCF6037B6E09DA090 /* Pods-PayWiserIbanWalletSDK-SampleApp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PayWiserIbanWalletSDK-SampleApp.debug.xcconfig"; path = "Target Support Files/Pods-PayWiserIbanWalletSDK-SampleApp/Pods-PayWiserIbanWalletSDK-SampleApp.debug.xcconfig"; sourceTree = "<group>"; };
+		6176961F56B1F242B82CDD45 /* Pods-PayWiserIbanWalletSDK-SampleApp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PayWiserIbanWalletSDK-SampleApp.debug.xcconfig"; path = "Target Support Files/Pods-PayWiserIbanWalletSDK-SampleApp/Pods-PayWiserIbanWalletSDK-SampleApp.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -62,20 +62,28 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				0520E83310AA30EAD5E52F18 /* Pods_PayWiserIbanWalletSDK_SampleApp.framework in Frameworks */,
+				DD928AF4F4C8425D651E9DA3 /* Pods_PayWiserIbanWalletSDK_SampleApp.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		236191AD7E162EDEE8100E70 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				23220A95BA6BD57EE35B6FDB /* Pods_PayWiserIbanWalletSDK_SampleApp.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		3B4C6BD425E2959200C58A33 = {
 			isa = PBXGroup;
 			children = (
 				3B4C6BDF25E2959200C58A33 /* PayWiserIbanWalletSDK-SampleApp */,
 				3B4C6BDE25E2959200C58A33 /* Products */,
-				3B4C6C0E25E29A4600C58A33 /* Frameworks */,
 				FA35FD3E2179310EBB0C00F3 /* Pods */,
+				236191AD7E162EDEE8100E70 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -108,19 +116,11 @@
 			path = "PayWiserIbanWalletSDK-SampleApp";
 			sourceTree = "<group>";
 		};
-		3B4C6C0E25E29A4600C58A33 /* Frameworks */ = {
-			isa = PBXGroup;
-			children = (
-				4A145A98483E011B693AC7CB /* Pods_PayWiserIbanWalletSDK_SampleApp.framework */,
-			);
-			name = Frameworks;
-			sourceTree = "<group>";
-		};
 		FA35FD3E2179310EBB0C00F3 /* Pods */ = {
 			isa = PBXGroup;
 			children = (
-				6956C67FCF6037B6E09DA090 /* Pods-PayWiserIbanWalletSDK-SampleApp.debug.xcconfig */,
-				49E2F299801ABAAF61A96717 /* Pods-PayWiserIbanWalletSDK-SampleApp.release.xcconfig */,
+				6176961F56B1F242B82CDD45 /* Pods-PayWiserIbanWalletSDK-SampleApp.debug.xcconfig */,
+				0C53C3950A262E2A95AF309F /* Pods-PayWiserIbanWalletSDK-SampleApp.release.xcconfig */,
 			);
 			path = Pods;
 			sourceTree = "<group>";
@@ -132,12 +132,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 3B4C6BF125E2959600C58A33 /* Build configuration list for PBXNativeTarget "PayWiserIbanWalletSDK-SampleApp" */;
 			buildPhases = (
-				9EE581717E7ED3F7C8150985 /* [CP] Check Pods Manifest.lock */,
+				178153DC95765FE1A0B86A52 /* [CP] Check Pods Manifest.lock */,
 				3B4C6BD925E2959200C58A33 /* Sources */,
 				3B4C6BDA25E2959200C58A33 /* Frameworks */,
 				3B4C6BDB25E2959200C58A33 /* Resources */,
 				3B66E31725E7ACF3009D487D /* Embed Frameworks */,
-				1EA66825056DA109C97AB2F2 /* [CP] Embed Pods Frameworks */,
+				7A4DFA25D278091991FA33D8 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -195,24 +195,7 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		1EA66825056DA109C97AB2F2 /* [CP] Embed Pods Frameworks */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-PayWiserIbanWalletSDK-SampleApp/Pods-PayWiserIbanWalletSDK-SampleApp-frameworks-${CONFIGURATION}-input-files.xcfilelist",
-			);
-			name = "[CP] Embed Pods Frameworks";
-			outputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-PayWiserIbanWalletSDK-SampleApp/Pods-PayWiserIbanWalletSDK-SampleApp-frameworks-${CONFIGURATION}-output-files.xcfilelist",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-PayWiserIbanWalletSDK-SampleApp/Pods-PayWiserIbanWalletSDK-SampleApp-frameworks.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-		9EE581717E7ED3F7C8150985 /* [CP] Check Pods Manifest.lock */ = {
+		178153DC95765FE1A0B86A52 /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -232,6 +215,23 @@
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		7A4DFA25D278091991FA33D8 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-PayWiserIbanWalletSDK-SampleApp/Pods-PayWiserIbanWalletSDK-SampleApp-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-PayWiserIbanWalletSDK-SampleApp/Pods-PayWiserIbanWalletSDK-SampleApp-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-PayWiserIbanWalletSDK-SampleApp/Pods-PayWiserIbanWalletSDK-SampleApp-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 /* End PBXShellScriptBuildPhase section */
@@ -393,7 +393,7 @@
 		};
 		3B4C6BF225E2959600C58A33 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 6956C67FCF6037B6E09DA090 /* Pods-PayWiserIbanWalletSDK-SampleApp.debug.xcconfig */;
+			baseConfigurationReference = 6176961F56B1F242B82CDD45 /* Pods-PayWiserIbanWalletSDK-SampleApp.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -418,7 +418,7 @@
 		};
 		3B4C6BF325E2959600C58A33 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 49E2F299801ABAAF61A96717 /* Pods-PayWiserIbanWalletSDK-SampleApp.release.xcconfig */;
+			baseConfigurationReference = 0C53C3950A262E2A95AF309F /* Pods-PayWiserIbanWalletSDK-SampleApp.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;

@@ -11,6 +11,18 @@ import PayWiserIbanWalletSDK
 
 class ViewController: UIViewController {
 
+    @IBOutlet weak var SdkVersion: UILabel!
+    
+    
+    var latestSdkVerion: String = "v1.0.0"
+    
+    
+    override func viewDidLoad() {
+        super.viewDidLoad()
+        
+        SdkVersion.text = latestSdkVerion
+    }
+    
     
     @IBAction func onLogin(_ sender: Any) {
         

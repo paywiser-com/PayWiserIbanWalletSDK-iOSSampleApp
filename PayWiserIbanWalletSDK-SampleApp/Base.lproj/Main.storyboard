@@ -12,7 +12,7 @@
         <!--PayWiser IBAN Wallet SDK-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="PhoneVerificationViewController" customModule="PayWiserIbanWalletSDK_TestApp" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="PhoneVerificationViewController" customModule="PayWiserIbanWalletSDK_SampleApp" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -25,7 +25,7 @@
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits" keyboardType="alphabet"/>
                             </textField>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qbI-TW-K5f" customClass="Button" customModule="PayWiserIbanWalletSDK_TestApp" customModuleProvider="target">
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qbI-TW-K5f" customClass="Button" customModule="PayWiserIbanWalletSDK_SampleApp" customModuleProvider="target">
                                 <rect key="frame" x="40" y="264" width="334" height="40"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="40" id="F22-zd-CKA"/>
@@ -82,7 +82,7 @@
         <!--PayWiser IBAN Wallet SDK-->
         <scene sceneID="KzM-OW-cfE">
             <objects>
-                <viewController id="qXG-Vj-KeH" customClass="ConfirmVerificationViewController" customModule="PayWiserIbanWalletSDK_TestApp" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="qXG-Vj-KeH" customClass="ConfirmVerificationViewController" customModule="PayWiserIbanWalletSDK_SampleApp" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="whc-Sv-ECu">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -116,7 +116,7 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="NqG-BE-JfW" customClass="Button" customModule="PayWiserIbanWalletSDK_TestApp" customModuleProvider="target">
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="NqG-BE-JfW" customClass="Button" customModule="PayWiserIbanWalletSDK_SampleApp" customModuleProvider="target">
                                 <rect key="frame" x="40" y="301" width="334" height="40"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="40" id="Tk1-On-Q6S"/>
@@ -126,7 +126,7 @@
                                     <action selector="onConfirmCode:" destination="qXG-Vj-KeH" eventType="touchUpInside" id="Jrv-iA-fsi"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ocE-Cz-xsS" customClass="ButtonInverted" customModule="PayWiserIbanWalletSDK_TestApp" customModuleProvider="target">
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ocE-Cz-xsS" customClass="ButtonInverted" customModule="PayWiserIbanWalletSDK_SampleApp" customModuleProvider="target">
                                 <rect key="frame" x="40" y="381" width="90" height="30"/>
                                 <state key="normal" title="Resend code"/>
                                 <connections>
@@ -185,12 +185,12 @@
         <!--PayWiser IBAN Wallet SDK-->
         <scene sceneID="PSj-5V-xi1">
             <objects>
-                <viewController id="V0D-PU-Mdv" customClass="ViewController" customModule="PayWiserIbanWalletSDK_TestApp" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="V0D-PU-Mdv" customClass="ViewController" customModule="PayWiserIbanWalletSDK_SampleApp" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="VTL-vB-v5D">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="tOh-eD-YGn" customClass="Button" customModule="PayWiserIbanWalletSDK_TestApp" customModuleProvider="target">
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="tOh-eD-YGn" customClass="Button" customModule="PayWiserIbanWalletSDK_SampleApp" customModuleProvider="target">
                                 <rect key="frame" x="40" y="428" width="334" height="40"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="40" id="qf9-pf-Ezb"/>
@@ -200,19 +200,28 @@
                                     <action selector="onLogin:" destination="V0D-PU-Mdv" eventType="touchUpInside" id="yKe-WL-zmQ"/>
                                 </connections>
                             </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="SDK version" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="n7r-qc-T8a">
+                                <rect key="frame" x="300.5" y="128" width="73.5" height="16"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                                <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="XtS-Yl-N0X"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
                             <constraint firstItem="tOh-eD-YGn" firstAttribute="centerY" secondItem="VTL-vB-v5D" secondAttribute="centerY" id="FNP-gY-d4N"/>
+                            <constraint firstItem="n7r-qc-T8a" firstAttribute="top" secondItem="XtS-Yl-N0X" secondAttribute="top" constant="40" id="UQ4-W1-fUI"/>
                             <constraint firstItem="XtS-Yl-N0X" firstAttribute="trailing" secondItem="tOh-eD-YGn" secondAttribute="trailing" constant="40" id="eZE-W2-X9b"/>
                             <constraint firstItem="tOh-eD-YGn" firstAttribute="leading" secondItem="XtS-Yl-N0X" secondAttribute="leading" constant="40" id="jPM-8X-tQc"/>
+                            <constraint firstItem="XtS-Yl-N0X" firstAttribute="trailing" secondItem="n7r-qc-T8a" secondAttribute="trailing" constant="40" id="lpn-FG-0RU"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" title="PayWiser IBAN Wallet SDK" id="bX2-68-n1F">
                         <barButtonItem key="backBarButtonItem" title=" " id="t4s-9H-82A"/>
                     </navigationItem>
                     <connections>
+                        <outlet property="SdkVersion" destination="n7r-qc-T8a" id="bQD-Vm-0Wm"/>
                         <segue destination="Cl3-yS-J4f" kind="show" identifier="walletData" id="a5d-9a-O0a"/>
                         <segue destination="BYZ-38-t0r" kind="show" identifier="loginScreen" id="Fg2-sI-oTC"/>
                     </connections>
@@ -224,7 +233,7 @@
         <!--PayWiser IBAN Wallet SDK-->
         <scene sceneID="Isw-XX-spv">
             <objects>
-                <viewController id="Cl3-yS-J4f" customClass="WalletDataViewController" customModule="PayWiserIbanWalletSDK_TestApp" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="Cl3-yS-J4f" customClass="WalletDataViewController" customModule="PayWiserIbanWalletSDK_SampleApp" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="evF-4O-RWP">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -246,15 +255,23 @@
                                 </collectionViewFlowLayout>
                                 <cells/>
                             </collectionView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="No ibans to display" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="JXw-cF-74W">
+                                <rect key="frame" x="142" y="149" width="130.5" height="18"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="hFn-oY-IFP"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
                             <constraint firstItem="hFn-oY-IFP" firstAttribute="bottom" secondItem="PRi-4g-V2f" secondAttribute="bottom" id="5Ef-wY-aZx"/>
                             <constraint firstItem="v2I-VG-RF9" firstAttribute="leading" secondItem="hFn-oY-IFP" secondAttribute="leading" constant="40" id="Fg0-Zq-1Rw"/>
+                            <constraint firstItem="JXw-cF-74W" firstAttribute="centerX" secondItem="evF-4O-RWP" secondAttribute="centerX" id="Gbj-4J-aAl"/>
                             <constraint firstItem="hFn-oY-IFP" firstAttribute="trailing" secondItem="v2I-VG-RF9" secondAttribute="trailing" constant="40" id="IYf-KN-iae"/>
                             <constraint firstItem="hFn-oY-IFP" firstAttribute="trailing" secondItem="PRi-4g-V2f" secondAttribute="trailing" constant="20" id="KkP-hP-yew"/>
                             <constraint firstItem="v2I-VG-RF9" firstAttribute="top" secondItem="hFn-oY-IFP" secondAttribute="top" constant="20" id="TdC-MP-chd"/>
+                            <constraint firstItem="JXw-cF-74W" firstAttribute="top" secondItem="v2I-VG-RF9" secondAttribute="bottom" constant="20" id="hNp-7k-s0C"/>
                             <constraint firstItem="PRi-4g-V2f" firstAttribute="leading" secondItem="hFn-oY-IFP" secondAttribute="leading" constant="20" id="vsD-M8-6Tb"/>
                             <constraint firstItem="PRi-4g-V2f" firstAttribute="top" secondItem="v2I-VG-RF9" secondAttribute="bottom" constant="20" id="wgx-EL-fBN"/>
                         </constraints>
@@ -263,6 +280,7 @@
                         <barButtonItem key="backBarButtonItem" title=" " id="W7i-lr-WaJ"/>
                     </navigationItem>
                     <connections>
+                        <outlet property="NoIbansText" destination="JXw-cF-74W" id="aaN-gv-4he"/>
                         <outlet property="ibansCollectionView" destination="PRi-4g-V2f" id="eq3-G3-SzZ"/>
                     </connections>
                 </viewController>

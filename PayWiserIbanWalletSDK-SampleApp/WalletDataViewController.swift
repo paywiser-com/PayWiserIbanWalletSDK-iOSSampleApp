@@ -13,6 +13,7 @@ class WalletDataViewController : UIViewController {
     
     
     @IBOutlet weak var ibansCollectionView: UICollectionView!
+    @IBOutlet weak var NoIbansText: UILabel!
     
     var ibans: [PWIban] = [PWIban]()
     
@@ -22,6 +23,8 @@ class WalletDataViewController : UIViewController {
         
         navigationItem.rightBarButtonItem = UIBarButtonItem(title: NSLocalizedString("Logout", comment: ""), style: .plain, target: self, action: #selector(onLogout))
         navigationItem.leftBarButtonItem = UIBarButtonItem(title: NSLocalizedString("Close", comment: ""), style: .plain, target: self, action: #selector(onClose))
+        
+        NoIbansText.isHidden = true
         
         showLoading(vc: self)
         setCollectionViews()
@@ -36,6 +39,7 @@ class WalletDataViewController : UIViewController {
         PayWiserIbanWallet.listIbans({ [self] data, error in
             if let ibansList = data {
                 ibans = ibansList
+                NoIbansText.isHidden = ibans.count > 0
                 ibansCollectionView.reloadData()
             }
             else {
